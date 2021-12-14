@@ -5,13 +5,12 @@ export function renderDogCard(dog) {
     const p = document.createElement('p');
 
     div.classList.add('dog-card');
-
     p.textContent = dog.name;
     img.src = `./assets/${dog.breed}.jpeg`;
     a.href = `./detail/?id=${dog.id}`;
     
     div.append(p, img);
-
+    
     a.append(div);
 
     return a;

@@ -10,7 +10,7 @@ export function renderDogCard(dog) {
     a.href = `./detail/?id=${dog.id}`;
     
     div.append(p, img);
-
+    
     a.append(div);
 
     return a;
